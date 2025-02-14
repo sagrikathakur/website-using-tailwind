@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tailwind project</title>
+  <link rel="stylesheet" href="moon.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="overflow-x-hidden ">
+<!--responsive nav bar-->
+
+<!------logo-->
+<nav class="p-3 flex bg-white justify-between items-center">
+  <a href="#" id="brand" class="flex gap-2 items-center">
+    <img class="object-cover max-w-12 max-h-12" src="logo.avif" alt="logo">
+    <span class="font-medium">ToDesktop</span>
+    <!--logo-->
+  </a>
+  <div id="nav-menu" class="hidden lg:flex gap-12">
+    <a href="#" class="font-medium hover:text-[#3238f2]">Pricing</a>
+    <a href="#" class="font-medium hover:text-[#3238f2]">Docs</a>
+    <a href="#" class="font-medium hover:text-[#3238f2]">ChangeLog</a>
+    <a href="#" class="font-medium hover:text-[#3238f2]">Blog</a>
+    <a href="#" class="font-medium hover:text-[#3238f2]">Login</a>
+
+
+
+  </div><!--div menu-->
+  <button class="hidden lg:flex gap-2 items-center border-1 border-gray-400 px-6 py-2 rounded-lg hover:border-gray-600">
+    <img src="img2.svg" alt="">
+   <span>Electron Developers</span>
+    <i class="fa-solid fa-arrow-right"></i>
+ </button>
+
+
+  <button class="p-3 lg:hidden" onclick="handleMenu()">
+    <i class="fa-solid fa-bars text-gray-700"></i>
+  </button>
+
+
+
+
+  <div id="navDia" class=" hidden fixed z-10 md:hidden bg-white inset-0 p-3">
+    <div id="nav-bar" class="flex justify-between">
+
+      <a href="#" id="brand" class="flex gap-2 items-center">
+        <img class="object-cover max-w-12 max-h-12" src="logo.avif" alt="logo">
+        <span class="font-medium">ToDesktop</span>
+        </a>
+
+    <button class="p-3 md:hidden" onclick="handleMenu()">
+      <i class="fa-solid fa-xmark text-gray-700"></i>
+    </button>
+</div>
+
+<div class="mt-6">
+  <a href="#" class="font-medium m-3 p-3 hover:bg-gray-100 block rounded-lg">pricing</a>
+  <a href="#" class="font-medium m-3 p-3 hover:bg-gray-100 block rounded-lg">Docs</a>
+  <a href="#" class="font-medium m-3 p-3 hover:bg-gray-100 block rounded-lg">ChangeLog</a>
+  <a href="#" class="font-medium m-3 p-3 hover:bg-gray-100 block rounded-lg">Blogs</a>
+  <a href="#" class="font-medium m-3 p-3 hover:bg-gray-100 block rounded-lg">LogIn</a>
+</div>
+
+<div class="h-[1px] bg-gray-300"></div>
+
+  <button class="mt-6 w-full flex md:flex gap-2 items-center  px-6 py-4 rounded-lg hover:bg-gray-50">
+    <img src="img2.svg" alt="">
+   <span>Electron Developers</span>
+ </button>
+</nav>
+<!--hero section-->
+<main>
+  <div id="hero" class="min-h-screen bg-gradient-to-b from-purple-100 via-orange-100 to-transparent ">
+    <div id="hero-container" class="max-w-4xl mx-auto px-6 pt-6 pb-32 flex flex-col sm:items-center sm:text-center sm:pt-12">
+      <div id="version-text" class="flex items-center my-6 gap-2 border border-yellow-300 bg-yellow-50 rounded-lg px-3 py-1 w-fit shadow-md hover:shadow-lg hover:-translate-y-1 transititon">
+        <div class="w-2 h-2 bg-yellow-400 rounded-full border-amber-600"></div>
+        <p class="font-medium text-yellow-600">v0.21.1:<span class="text-yellow-800">find-in-page bug fixes</span></p>
+      </div> 
+<h1 class="text-4xl font-display text-grey-800 font-semibold leading-snug mt-4 sm:text-5xl sm:leading-normal">Web app to desktop app in minutes</h1>
+<p class="text-2xl mt-4 sm:text-2xl sm:mt-8 text-gray-800">Take your web app codebase and transform it into a cross platform desktop app with native functionality</p>
+
+<div id="button-container" class="mt-12 flex gap-4 flex-col sm:flex-row">
+  <button class="px-8 py-3 font-semibold rounded-lg text-white bg-blue-500 shadow-sm hover:bg-blue-700">Download now
+
+  </button>
+  <button class="px-8 py-3 font-semibold rounded-lg bg-white border border-gray-400 hover:border-gray-800">Read docs</button>
+</div>
+<!----------------------------------------------body--------------------------------------------------------------------->
+<div id="companies-container"class="flex flex-col gap-8">
+  <div id="company-title" class="flex justify-center gap-6 m-6">
+    <img class="translate-y-2" src="arrowleft.svg" alt="">
+    <span class="font-semibold">APPS POWERED BY TODESKTOP</span>
+    <img class=" -scale-x-100 translate-y-2" src="arrowright.svg" alt="">
+  </div>
+
+  <!------------------------------line1------------------------------>
+  <div id="lines-group" class="flex flex-col gap-4">
+    <div id="line1" class="flex gap-4 w-screen -translate-x-48">
+<div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border-gray-100">
+  <img class="w-12 h-12 md:w-16 md:h-16" src="pic1.avif" alt="">
+<span class="text-[12px] md:text-[16px] font-semibold">unbounce</span>
+</div>
+
+<div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border-gray-100">
+  <img class="w-12 h-12 md:w-16 md:h-16" src="pic2.avif" alt="">
+<span class="text-[12px] md:text-[16px] font-semibold">unbounce</span>
+</div>
+
+
+<div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border-gray-100">
+  <img class="w-12 h-12 md:w-16 md:h-16" src="pic3.avif" alt="">
+<span class="text-[12px] md:text-[16px] font-semibold">unbounce</span>
+</div>
+
+<div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border-gray-100">
+  <img class="w-12 h-12 md:w-16 md:h-16" src="pic4.avif" alt="">
+<span class="text-[12px] md:text-[16px] font-semibold">unbounce</span>
+</div>
+
+
+<div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border-gray-100">
+  <img class="w-12 h-12 md:w-16 md:h-16" src="pic5.avif" alt="">
+<span class="text-[12px] md:text-[16px] font-semibold">unbounce</span>
+</div>
+
+<div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border-gray-100">
+  <img class="w-12 h-12 md:w-16 md:h-16" src="pic6.avif" alt="">
+<span class="text-[12px] md:text-[16px] font-semibold">unbounce</span>
+</div>
+<div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border-gray-100">
+  <img class="w-12 h-12 md:w-16 md:h-16" src="pic7.avif" alt="">
+<span class="text-[12px] md:text-[16px] font-semibold">unbounce</span>
+</div>
+
+<div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border-gray-100">
+  <img class="w-12 h-12 md:w-16 md:h-16" src="pic8.avif" alt="">
+<span class="text-[12px] md:text-[16px] font-semibold">unbounce</span>
+</div>
+
+
+
+
+<div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border-gray-100">
+  <img class="w-12 h-12 md:w-16 md:h-16" src="pic8.avif" alt="">
+<span class="text-[12px] md:text-[16px] font-semibold">unbounce</span>
+</div>
+
+<div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border-gray-100">
+  <img class="w-12 h-12 md:w-16 md:h-16" src="pic9.avif" alt="">
+<span class="text-[12px] md:text-[16px] font-semibold">unbounce</span>
+</div>
+
+
+<div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border-gray-100">
+  <img class="w-12 h-12 md:w-16 md:h-16" src="pic10.avif" alt="">
+<span class="text-[12px] md:text-[16px] font-semibold">unbounce</span>
+</div>
+
+<div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border-gray-100">
+  <img class="w-12 h-12 md:w-16 md:h-16" src="pic1.avif" alt="">
+<span class="text-[12px] md:text-[16px] font-semibold">unbounce</span>
+</div>
+
+
+<div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border-gray-100">
+  <img class="w-12 h-12 md:w-16 md:h-16" src="pic2.avif" alt="">
+<span class="text-[12px] md:text-[16px] font-semibold">unbounce</span>
+</div>
+
+<div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border-gray-100">
+  <img class="w-12 h-12 md:w-16 md:h-16" src="pic3.avif" alt="">
+<span class="text-[12px] md:text-[16px] font-semibold">unbounce</span>
+</div>
+<div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border-gray-100">
+  <img class="w-12 h-12 md:w-16 md:h-16" src="pic4.avif" alt="">
+<span class="text-[12px] md:text-[16px] font-semibold">unbounce</span>
+</div>
+
+<div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border-gray-100">
+  <img class="w-12 h-12 md:w-16 md:h-16" src="pic4.avif" alt="">
+<span class="text-[12px] md:text-[16px] font-semibold">unbounce</span>
+</div>
+
+</div>
+<!--------------------line2------------------------------------------>
+    <div id="line2" class="flex gap-4 w-screen -translate-x-36">
+<div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border-gray-100">
+  <img class="w-12 h-12 md:w-16 md:h-16" src="pic1.avif" alt="">
+<span class="text-[12px] md:text-[16px] font-semibold">unbounce</span>
+</div>
+
+<div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border-gray-100">
+  <img class="w-12 h-12 md:w-16 md:h-16" src="pic2.avif" alt="">
+<span class="text-[12px] md:text-[16px] font-semibold">unbounce</span>
+</div>
+
+
+<div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border-gray-100">
+  <img class="w-12 h-12 md:w-16 md:h-16" src="pic3.avif" alt="">
+<span class="text-[12px] md:text-[16px] font-semibold">unbounce</span>
+</div>
+
+<div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border-gray-100">
+  <img class="w-12 h-12 md:w-16 md:h-16" src="pic4.avif" alt="">
+<span class="text-[12px] md:text-[16px] font-semibold">unbounce</span>
+</div>
+<div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border-gray-100">
+  <img class="w-12 h-12 md:w-16 md:h-16" src="pic6.avif" alt="">
+<span class="text-[12px] md:text-[16px] font-semibold">unbounce</span>
+</div>
+
+<div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border-gray-100">
+  <img class="w-12 h-12 md:w-16 md:h-16" src="pic5.avif" alt="">
+<span class="text-[12px] md:text-[16px] font-semibold">unbounce</span>
+</div>
+
+<div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border-gray-100">
+  <img class="w-12 h-12 md:w-16 md:h-16" src="pic7.avif" alt="">
+<span class="text-[12px] md:text-[16px] font-semibold">unbounce</span>
+</div>
+
+<div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border-gray-100">
+  <img class="w-12 h-12 md:w-16 md:h-16" src="pic8.avif" alt="">
+<span class="text-[12px] md:text-[16px] font-semibold">unbounce</span>
+</div>
+
+<div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border-gray-100">
+  <img class="w-12 h-12 md:w-16 md:h-16" src="pic9.avif" alt="">
+<span class="text-[12px] md:text-[16px] font-semibold">unbounce</span>
+</div>
+
+<div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border-gray-100">
+  <img class="w-12 h-12 md:w-16 md:h-16" src="pic10.avif" alt="">
+<span class="text-[12px] md:text-[16px] font-semibold">unbounce</span>
+</div>
+
+
+<div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border-gray-100">
+  <img class="w-12 h-12 md:w-16 md:h-16" src="pic1.avif" alt="">
+<span class="text-[12px] md:text-[16px] font-semibold">unbounce</span>
+</div>
+
+<div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border-gray-100">
+  <img class="w-12 h-12 md:w-16 md:h-16" src="pic2.avif" alt="">
+<span class="text-[12px] md:text-[16px] font-semibold">unbounce</span>
+</div>
+</div>
+<!-----------------------------------div3-------------------------------->
+  <div id="line3" class="flex gap-4 w-screen -translate-x-48">
+<div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border-gray-100">
+<img class="w-12 h-12 md:w-16 md:h-16" src="pic5.avif" alt="">
+<span class="text-[12px] md:text-[16px] font-semibold">unbounce</span>
+</div>
+
+<div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border-gray-100">
+<img class="w-12 h-12 md:w-16 md:h-16" src="pic6.avif" alt="">
+<span class="text-[12px] md:text-[16px] font-semibold">unbounce</span>
+</div>
+<div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border-gray-100">
+  <img class="w-12 h-12 md:w-16 md:h-16" src="pic1.avif" alt="">
+<span class="text-[12px] md:text-[16px] font-semibold">unbounce</span>
+</div>
+
+<div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border-gray-100">
+  <img class="w-12 h-12 md:w-16 md:h-16" src="pic2.avif" alt="">
+<span class="text-[12px] md:text-[16px] font-semibold">unbounce</span>
+</div>
+<div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border-gray-100">
+  <img class="w-12 h-12 md:w-16 md:h-16" src="pic1.avif" alt="">
+<span class="text-[12px] md:text-[16px] font-semibold">unbounce</span>
+</div>
+
+<div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border-gray-100">
+  <img class="w-12 h-12 md:w-16 md:h-16" src="pic2.avif" alt="">
+<span class="text-[12px] md:text-[16px] font-semibold">unbounce</span>
+</div>
+<div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border-gray-100">
+  <img class="w-12 h-12 md:w-16 md:h-16" src="pic1.avif" alt="">
+<span class="text-[12px] md:text-[16px] font-semibold">unbounce</span>
+</div>
+
+<div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border-gray-100">
+  <img class="w-12 h-12 md:w-16 md:h-16" src="pic2.avif" alt="">
+<span class="text-[12px] md:text-[16px] font-semibold">unbounce</span>
+</div>
+<div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border-gray-100">
+  <img class="w-12 h-12 md:w-16 md:h-16" src="pic1.avif" alt="">
+<span class="text-[12px] md:text-[16px] font-semibold">unbounce</span>
+</div>
+
+<div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border-gray-100">
+  <img class="w-12 h-12 md:w-16 md:h-16" src="pic2.avif" alt="">
+<span class="text-[12px] md:text-[16px] font-semibold">unbounce</span>
+</div>
+<div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border-gray-100">
+  <img class="w-12 h-12 md:w-16 md:h-16" src="pic1.avif" alt="">
+<span class="text-[12px] md:text-[16px] font-semibold">unbounce</span>
+</div>
+
+<div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border-gray-100">
+  <img class="w-12 h-12 md:w-16 md:h-16" src="pic2.avif" alt="">
+<span class="text-[12px] md:text-[16px] font-semibold">unbounce</span>
+</div>
+<div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border-gray-100">
+  <img class="w-12 h-12 md:w-16 md:h-16" src="pic1.avif" alt="">
+<span class="text-[12px] md:text-[16px] font-semibold">unbounce</span>
+</div>
+
+<div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border-gray-100">
+  <img class="w-12 h-12 md:w-16 md:h-16" src="pic2.avif" alt="">
+<span class="text-[12px] md:text-[16px] font-semibold">unbounce</span>
+</div>
+</div>
+</div>
+<!----------------------step by step------------------------------->
+<div id="step" class=" px-6 py=12 max-w-7xl mt-16 mx-auto lg:px-8 lg:mt-33">
+  <h2 class="text-5xl sm:font-semibold mb-14">how it works </h2>
+  <div class="rounded-xl border px-8 py-12 flex flex-col">
+  <div class="flex flex-col gap-6 ">
+    <span class="border-amber-200 bg-yellow-50 text-yellow-800 w-fit px-3 py-1 rounded-lg font-medium font-display">step1</span>
+    <h3 class="text-4xl">Bootstrap straight from your web app</h3>
+    <p class="text-lg font-light">Copy and paste your web app url into ToDesktop. Customise your app design, app icon and window frame UI with no code.</p>
+    <ul class="grid grid-cols-2 gap-2">
+      <li class="flex gap-4"> <i class="fa-solid fa-check"></i> <a class="text-lg font-light border-b border-black border-opacity-30 hover:border-opacity-80"href="#">multiple windows</a></li>
+      <li class="flex gap-4"> <i class="fa-solid fa-check"></i> <a class="text-lg font-light border-b border-black border-opacity-30 hover:border-opacity-80"href="#">Offline support</a></li>
+      <li class="flex gap-4"> <i class="fa-solid fa-check"></i> <a class="text-lg font-light border-b border-black border-opacity-30 hover:border-opacity-80"href="#">Launch on start up</a></li>
+      <li class="flex gap-4"> <i class="fa-solid fa-check"></i> <a class="text-lg font-light border-b border-black border-opacity-30 hover:border-opacity-80"href="#">Menubar/tray menu</a></li>
+      <li class="flex gap-4"> <i class="fa-solid fa-check"></i> <a class="text-lg font-light border-b border-black border-opacity-30 hover:border-opacity-80"href="#">Customisable menus</a></li>
+      <li class="flex gap-4"> <i class="fa-solid fa-check"></i> <a class="text-lg font-light border-b border-black border-opacity-30 hover:border-opacity-80"href="#">Tabs(windows only)</a></li>
+
+    </ul>
+  </div>
+</div> <!--div of box-->
+</div><!--div of 1steps-->
+
+<!--step2-->
+
+<div id="step" class=" px-6 py=12 max-w-7xl mt-16 mx-auto lg:px-8 lg:mt-33">
+  <div class="rounded-xl border px-8 py-12 flex flex-col">
+  <div class="flex flex-col gap-6 ">
+    <span class="border-amber-200 bg-yellow-50 text-yellow-800 w-fit px-3 py-1 rounded-lg font-medium font-display">step2</span>
+    <h3 class="text-4xl">Bootstrap straight from your web app</h3>
+    <p class="text-lg font-light">Copy and paste your web app url into ToDesktop. Customise your app design, app icon and window frame UI with no code.</p>
+    <ul class="grid grid-cols-2 gap-2">
+      <li class="flex gap-4"> <i class="fa-solid fa-check"></i> <a class="text-lg font-light border-b border-black border-opacity-30 hover:border-opacity-80"href="#">multiple windows</a></li>
+      <li class="flex gap-4"> <i class="fa-solid fa-check"></i> <a class="text-lg font-light border-b border-black border-opacity-30 hover:border-opacity-80"href="#">Offline support</a></li>
+      <li class="flex gap-4"> <i class="fa-solid fa-check"></i> <a class="text-lg font-light border-b border-black border-opacity-30 hover:border-opacity-80"href="#">Launch on start up</a></li>
+      <li class="flex gap-4"> <i class="fa-solid fa-check"></i> <a class="text-lg font-light border-b border-black border-opacity-30 hover:border-opacity-80"href="#">Menubar/tray menu</a></li>
+      <li class="flex gap-4"> <i class="fa-solid fa-check"></i> <a class="text-lg font-light border-b border-black border-opacity-30 hover:border-opacity-80"href="#">Customisable menus</a></li>
+      <li class="flex gap-4"> <i class="fa-solid fa-check"></i> <a class="text-lg font-light border-b border-black border-opacity-30 hover:border-opacity-80"href="#">Tabs(windows only)</a></li>
+
+    </ul>
+  </div>
+</div> <!--div of box-->
+</div><!--div of 1steps-->
+<!-------------------------------------------bento-grid--------------------->
+<div id="bento-grid" class="gap-6 px-6 py-12 wax-w-7xl mt-16 mx-auto lg:px-0 lg:mt-32">
+<h1 class="text-5xl m-7 ">ToDesktop handlers the detail</h1>
+<div id="grid-container" class="flex flex-cols gap-6 lg:grid lg:grid-cols-3">
+<div class="rounded-2xl p-[5px] bg-slate-100 hover: bg-gradient-to-br hover:from-red200 hover:via-purple-200 hover:to-yellow-200 ">
+  <div class="bg-white rounded-2xl w-full h-full p-6  gap-6 flex flex-col items-center hover: bg-gradient-to-br hover:from-red200 hover:via-purple-200 hover:to-yellow-200 ">
+
+
+
+    <h3 class="text-2xl font-medium">Native Notification</h3>
+    <img src="asset1.avif" alt="">
+
+  </div>
+</div>
+<div class="rounded-2xl p-[5px] bg-slate-100 hover: bg-gradient-to-br hover:from-red200 hover:via-purple-200 hover:to-yellow-200 ">
+  <div class="bg-white rounded-2xl w-full h-full p-6  gap-6 flex flex-col items-center hover: bg-gradient-to-br hover:from-red200 hover:via-purple-200 hover:to-yellow-200 ">
+    <h3 class="text-2xl font-medium">Auto Updates</h3>
+    <p class="text-lg text-center font-light">We’ll ensure the underlying browser is up to date and deliver performance improvements, security patches, & additional features</p>
+    <img src="asset2.avif" alt="">
+  </div>
+</div>
+<div class="rounded-2xl p-[5px] bg-slate-100 hover: bg-gradient-to-br hover:from-red200 hover:via-purple-200 hover:to-yellow-200 ">
+  <div class="bg-white rounded-2xl w-full h-full p-6  gap-6 flex flex-col items-center hover: bg-gradient-to-br hover:from-red200 hover:via-purple-200 hover:to-yellow-200 ">
+    <h3 class="text-2xl font-medium">Native Notification</h3>
+    <img src="asset1.avif" alt="">
+  </div>
+</div>
+<div class="rounded-2xl p-[5px] bg-slate-100 hover: bg-gradient-to-br hover:from-red200 hover:via-purple-200 hover:to-yellow-200 ">
+  <div class="bg-white rounded-2xl w-full h-full p-6  gap-6 flex flex-col items-center hover: bg-gradient-to-br hover:from-red200 hover:via-purple-200 hover:to-yellow-200 ">
+    <h3 class="text-2xl font-medium">Native Notification</h3>
+    <img src="asset1.avif" alt="">
+  </div>
+</div>
+<div class="rounded-2xl p-[5px] bg-slate-100 hover: bg-gradient-to-br hover:from-red200 hover:via-purple-200 hover:to-yellow-200 ">
+  <div class="bg-white rounded-2xl w-full h-full p-6  gap-6 flex flex-col items-center hover: bg-gradient-to-br hover:from-red200 hover:via-purple-200 hover:to-yellow-200 ">
+    <h3 class="text-2xl font-medium">Native Notification</h3>
+    <img src="asset1.avif" alt="">
+  </div>
+</div>
+</div>
+</div>
+<!------------------company feature lines---------------------------------------------------------------------->
+<div id="feature" class="px-6 py-12 max-w-7xl mt-4 lg:px-8 lg:mt-32">
+  <div class="border rounded-2xl overflow-hidden flex justify-center p-4">
+    <div id="line-4" class="flex gap-8 p-6">
+      <h3 class="my-6 mx-2 text-2xl font-semibold whitespace-nowrap">Downloads Analytics</h3>
+      <span>.</span>
+      <h3 class="my-6 mx-2 text-2xl font-semibold whitespace-nowrap">Downloads Analytics</h3>
+      <span>.</span>
+      <h3 class="my-6 mx-2 text-2xl font-semibold whitespace-nowrap">Downloads Analytics</h3>
+      <span>.</span>
+      <h3 class="my-6 mx-2 text-2xl font-semibold whitespace-nowrap">Downloads Analytics</h3>
+      <span>.</span>
+      <h3 class="my-6 mx-2 text-2xl font-semibold whitespace-nowrap">Downloads Analytics</h3>
+      <span>.</span>
+      
+
+
+
+
+    </div>
+  </div>
+</div>
+
+<!-----------------------faq-------------------------------------------->
+
+<div id="pricing" class="max-w-4xl mx-auto px-6 py-12 lg:px-8 lg:mt-32">
+  <h2 class="text-5xl leading-normal sm:font-semibold max-w-2xl">choose a plan that fits your needs</h2>
+<div class="flex flex-col lg:flex-row mt-6 gap-6">
+  <div class="border rounded-lg px-8 pt-12 pb-8 flex flex-col gap-6">
+    <h3 class="text-4xl">free</h3>
+    <p class="text-lg font-light">For personal use or testing your app before deploying to customers</p>
+    <p>key features</p>
+<ul class="space-y-4">
+   <li class="flex items-center gap-4"><i class="fa-solid fa-check text-gray-500"></i> <span>Free for personal use</span></li>
+ <li class="flex items-center gap-4"><i class="fa-solid fa-xmark text-gray-500"></i> <span>NO CODE SIGNING</span></li>
+<li class="flex items-center gap-4"><i class="fa-solid fa-check text-gray-500"></i> <span>Free for personal use</span></li>
+<li class="flex items-center gap-4"><i class="fa-solid fa-xmark text-gray-500"></i> <span>NO NATIVE INSTALLER</span></li>
+
+<li class="flex items-center gap-4"><i class="fa-solid fa-check text-gray-500"></i> <span>Free for personal use</span></li>
+<li class="flex items-center gap-4"><i class="fa-solid fa-xmark text-gray-500"></i> <span>NO CODE SIGNING</span></li>
+<li class="flex items-center gap-4"><i class="fa-solid fa-check text-gray-500"></i> <span>Free for personal use</span></li>
+<li class="flex items-center gap-4"><i class="fa-solid fa-xmark text-gray-500"></i> <span>NO NATIVE INSTALLER</span></li>
+
+
+    </ul>
+    <button class="border px-8 py-3 text-blue-800 rounded-lg hover:border-gray-800">read docs</button>
+    
+  </div>
+
+
+  <div class="border rounded-lg px-8 pt-12 pb-8 flex flex-col gap-6">
+    <h3 class="text-4xl">free</h3>
+    <p class="text-lg font-light">For personal use or testing your app before deploying to customers</p>
+    <p>key features</p>
+<ul class="space-y-4">
+   <li class="flex items-center gap-4"><i class="fa-solid fa-check text-gray-500"></i> <span>Free for personal use</span></li>
+ <li class="flex items-center gap-4"><i class="fa-solid fa-xmark text-gray-500"></i> <span>NO CODE SIGNING</span></li>
+<li class="flex items-center gap-4"><i class="fa-solid fa-check text-gray-500"></i> <span>Free for personal use</span></li>
+<li class="flex items-center gap-4"><i class="fa-solid fa-xmark text-gray-500"></i> <span>NO NATIVE INSTALLER</span></li>
+
+<li class="flex items-center gap-4"><i class="fa-solid fa-check text-gray-500"></i> <span>Free for personal use</span></li>
+<li class="flex items-center gap-4"><i class="fa-solid fa-xmark text-gray-500"></i> <span>NO CODE SIGNING</span></li>
+<li class="flex items-center gap-4"><i class="fa-solid fa-check text-gray-500"></i> <span>Free for personal use</span></li>
+<li class="flex items-center gap-4"><i class="fa-solid fa-xmark text-gray-500"></i> <span>NO NATIVE INSTALLER</span></li>
+    </ul>
+    <button class="border px-8 py-3 text-blue-800 rounded-lg hover:border-gray-800">read docs</button>
+    
+  </div>
+  <div class="border rounded-lg px-8 pt-12 pb-8 flex flex-col gap-6">
+    <h3 class="text-4xl">free</h3>
+    <p class="text-lg font-light">For personal use or testing your app before deploying to customers</p>
+    <p>key features</p>
+<ul class="space-y-4">
+   <li class="flex items-center gap-4"><i class="fa-solid fa-check text-gray-500"></i> <span>Free for personal use</span></li>
+ <li class="flex items-center gap-4"><i class="fa-solid fa-xmark text-gray-500"></i> <span>NO CODE SIGNING</span></li>
+<li class="flex items-center gap-4"><i class="fa-solid fa-check text-gray-500"></i> <span>Free for personal use</span></li>
+<li class="flex items-center gap-4"><i class="fa-solid fa-xmark text-gray-500"></i> <span>NO NATIVE INSTALLER</span></li>
+
+<li class="flex items-center gap-4"><i class="fa-solid fa-check text-gray-500"></i> <span>Free for personal use</span></li>
+<li class="flex items-center gap-4"><i class="fa-solid fa-xmark text-gray-500"></i> <span>NO CODE SIGNING</span></li>
+<li class="flex items-center gap-4"><i class="fa-solid fa-check text-gray-500"></i> <span>Free for personal use</span></li>
+<li class="flex items-center gap-4"><i class="fa-solid fa-xmark text-gray-500"></i> <span>NO NATIVE INSTALLER</span></li>
+
+
+
+
+
+
+
+
+
+
+    </ul>
+    <button class="border px-8 py-3 text-blue-800 rounded-lg hover:border-gray-800">read docs</button>
+    
+  </div>
+
+</div>
+</div>
+<!------------------------footer---------------------->
+
+  
+    <footer class="bg-gray-900 text-white py-6 mt-10">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-wrap justify-between">
+                <!-- Logo / Brand -->
+                <div class="mb-6">
+                    <h2 class="text-2xl font-bold">MyWebsite</h2>
+                    <p class="text-gray-400 mt-2">Building the future, one line of code at a time.</p>
+                </div>
+
+                <!-- Links -->
+                <div class="mb-6">
+                    <h3 class="font-semibold mb-2">Quick Links</h3>
+                    <ul>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">About</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Services</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social Media -->
+                <div class="mb-6">
+                    <h3 class="font-semibold mb-2">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white">🌐</a>
+                        <a href="#" class="text-gray-400 hover:text-white">🐦</a>
+                        <a href="#" class="text-gray-400 hover:text-white">📘</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-4 pt-4 text-center text-gray-400">
+                <p>&copy; 2025 MyWebsite. All rights reserved.</p>
+                <button id="themeToggle" class="mt-2 bg-gray-700 px-4 py-2 rounded text-white">Toggle Theme</button>
+            </div>
+        </div>
+    </footer>
+
+<div class="h-[78vh]"></div>
+</main>
+<script src="script.js"></script>
+</body>
+
+</html>
